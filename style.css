@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Oswald&family=Poppins:wght@300;400;500;600;700&family=Roboto&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav-items{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 15px;
+   font-family: 'Oswald', sans-serif;
+
+}
+
+.left-items {
+    width: 33%;
+}
+
+.right-side{
+    width: 20%;
+}
+
+.right-side ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav .company-logo{
+    width: 154px;
+}
+
+.left-items ul{
+    list-style: none;
+}
+
+.left-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.left-items ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.items-left{
+    width: 50%;
+}
+
+.nav-trans{
+    transition-property: color;
+    
+    
+    cursor: pointer;
+}
+
+.nav-trans :hover{
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;
+    color: green;
+}
