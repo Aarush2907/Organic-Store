@@ -72,3 +72,58 @@ nav .company-logo{
     transition-duration: 0.3s;
     color: green;
 }
+
+.entry {
+    position: relative; /* Ensure the pseudo-element is positioned in relation to this container */
+    background-color: #fafaf7;
+    height: 800px;
+}
+
+.entry::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/leaves-free-img.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 28% auto;
+    opacity: 0.2; /* Adjust the opacity as needed, where 1 is fully opaque and 0 is fully transparent */
+    pointer-events: none; /* This makes sure the pseudo-element doesn't interfere with mouse events */
+}
+
+.entry-content{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding-top: 100px;
+   padding-right: 7%;
+   padding-left: 10%;
+   
+}
+
+.entry-content-content{
+    padding: 40px;
+}
+
+.entry-content-content *{
+ padding: 5px;
+ font-family: 'Oswald', sans-serif;
+}
+
+.entry-content-content-button button {
+    background-color: #6a9739; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    
+  }
